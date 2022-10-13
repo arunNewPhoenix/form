@@ -28,7 +28,9 @@ https://nimble-malasada-4ffd38.netlify.app/
 - TABLE VIEW OF THE SUBMITTED DATA
 - BACK TO FORM LINK TO ROUTE BACK TO THE HOME PAGE
 
+![redhatGif](https://user-images.githubusercontent.com/62498648/195480327-68e372d7-2d2b-470e-82f4-71177e8363d7.gif)
 
+https://img.shields.io/github/contributors/arunNewPhoenix/form
 
 
 
