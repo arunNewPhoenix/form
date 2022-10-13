@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="results">      
+    </div>
+    <a href="/">Back to form</a>
+    <script>
+        let table = document.createElement('table');
+        let thead = document.createElement('thead');
+        let tbody = document.createElement('tbody');
+
+        table.appendChild(thead);
+        table.appendChild(tbody);
+
+        document.getElementById('results').appendChild(table);
+        
+        let row_1 = document.createElement('tr');
+        let heading_1 = document.createElement('th');
+        heading_1.innerHTML = "Sr. No";
+        let heading_2 = document.createElement('th');
+        heading_2.innerHTML = "FIELDS";
+        let heading_3 = document.createElement('th');
+        heading_3.innerHTML = "VALUES";
+
+        row_1.appendChild(heading_1);
+        row_1.appendChild(heading_2);
+        row_1.appendChild(heading_3);
+        thead.appendChild(row_1);
+
+
+
+        const resultList  = document.getElementById('results')
+        var serialNumber = 0
+        new URLSearchParams(window.location.search).forEach((value,name)=>{
+            serialNumber++;
+            let row = document.createElement('tr');
+            let row_data_1 = document.createElement('td');
+            row_data_1.innerHTML = serialNumber;
+            let row_data_2 = document.createElement('td');
+            row_data_2.innerHTML = name;
+            let row_data_3 = document.createElement('td');
+            row_data_3.innerHTML = value;
+    
+            row.appendChild(row_data_1);
+            row.appendChild(row_data_2);
+            row.appendChild(row_data_3);
+            thead.appendChild(row);
+
+         })
+    </script>
+</body>
+</html>

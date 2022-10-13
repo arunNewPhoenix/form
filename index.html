@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="body_format">
+    
+    
+
+            <div class="container_box">
+                <div class="title">
+                    <div class="image"> <img src="./assets/redHatLogo.png" height="90px" width="90px"><span class="company_name">Red Hat</span><span class="form_name">Apprenticeship Registeration Form</span></div>
+                
+
+                </div>
+                <div class="container">
+                    <form action="form_results.html" method="GET">
+              
+                        <div class="user__details">
+                           
+                            <div class="input__box"> <label>First Name<span class="asterisk_imp">*</span></label>
+                                <input type="text" name="first_name" required onkeyup="validateAlphabetA()" id="_first_name" oninvalid="setCustomValidity('Please enter on alphabets only. ')"></div>
+                           
+                                <div class="input__box">  <label>Last Name</label>
+                                    <input type="text" name="last_name" onkeyup="validateAlphabetB()" required id="_last_name" oninvalid="setCustomValidity('Please enter on alphabets only. ')">
+                                </div>
+                          
+                                <div class="input__box">
+                                    <label>Email <span class="asterisk_imp">*</span></label>
+                                    <input type="email" name="email"  onkeyup="validateEmail()" required  id="_email_add" oninvalid="setCustomValidity('Please enter in proper email format. ')">
+                                </div>
+                         
+                
+                                <div class="input__box">
+                                    <label>Phone number <span class="asterisk_imp">*</span></label>
+                                    <input type="text" name="phone number" required  onkeyup="validatePhoneNumLength()" id="_phone_num" oninvalid="setCustomValidity('Please enter a ten digit mobile number. ')">
+                                </div>
+                           
+                                <div class="input__box">
+                                    <label>Current location <span class="asterisk_imp">*</span></label>
+                                    <input type="text" name="current_location" required>
+                                </div>
+                                <div class="gender__details">
+                                    <span class="gender__title"><div class="dot">Gender<span class="asterisk_imp">*</span></div></span>
+                                    <div class="category">
+                                        <label>
+                                            <span>Male</span>
+                                          </label>
+                                        <input type="radio" name="gender" value="male"  name="male" required>
+                                        <label > 
+                                            <span>Female</span>
+                                          </label>
+            
+                                        <input type="radio" name="gender" name="female" value="female" required>
+                                    </div>
+        
+                                    </div>
+                                  
+                                  
+                                   
+                             
+                                 
+                          
+                              <div class="input__box">
+                                <label>
+                                   <div class="dot">College/University <span class="asterisk_imp">*</span></div> </label>
+                                <div>
+                                    <select id="selectUniversity" placeholder="Please select your college / University"  class="dropdownSelector" name="college_university" required>
+                                        <option value="">Please select your college / University</option>
+                                       
+                                      </select>
+                                </div>
+                               
+                              </div>
+                                
+                              <div class="input__box">
+                                <label>
+                                    <div class="dot">Date of birth <span class="asterisk_imp">*</span></div></label>
+                                <input type="date" required>
+                              </div>
+                            </div>
+                             
+                            <div class="skill_bar">
+                                <label>
+                                    <div class="dot">Skill bar</div></label><br>
+                                <label>HTML</label>
+                                <div class="html_bar">
+                                 <div class="icon-left"><i class="glyphicon glyphicon-minus"></i></div>
+                                 0 <input type="range" class="slider" list="skillRating" name="html_rating" required>  100    <div class="icon-right"><i class="glyphicon glyphicon-plus"></i></div> 
+                                </div>
+                                <label>CSS</label>
+                               <div class="css_bar">
+                              <div class="icon-left"><i class="glyphicon glyphicon-minus"></i></div>
+                                0 <input type="range" class="slider" list="skillRating" name="css_rating" required>100     <div class="icon-right"><i class="glyphicon glyphicon-plus"></i></div> 
+                               </div>
+                               <label>JAVASCRIPT</label>
+                                  <div class="javascript_bar">
+                                  <div class="icon-left"> <i class="glyphicon glyphicon-minus"></i></div>
+                                 0 <input type="range" class="slider" list="skillRating" name="js_rating" required>100    <div class="icon-right"><i class="glyphicon glyphicon-plus"></i></div>   
+                                  </div>
+
+                                  <datalist id="skillRating">
+                                    <option value="0" ></option>
+                                    <option value="25"></option>
+                                    <option value="50" ></option>
+                                    <option value="75" ></option>
+                                    <option value="100" ></option>
+                                  
+                                  </datalist>
+                                  
+                              
+                             </div>
+                                 <div class="form_buttons">
+                                    
+                                    <div class="col-md-4 col-sm-6 mb-3">
+                                        <button type="submit" class="btn btn-success">Submit</button>
+                                      </div>
+                                      
+                                      <div class="col-md-4 col-sm-6 mb-3">
+                                        <button type="reset" class="btn btn-warning">Reset</button>
+                                      </div>
+                                      
+                                  
+                                 </div>
+                             
+                
+                        </div>
+                       
+                    </form>
+                   
+                </div>
+               
+            </div>
+           
+
+    
+    
+
+
+
+
+</body>
+</html>
