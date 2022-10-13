@@ -1,5 +1,6 @@
 # form
-form to register for Apprenticeship of Red hat organization as a final year undergraduate student of 2022
+form to register for Apprenticeship of Red hat organization as a final year undergraduate student of 2022 
+![GitHub contributors](https://img.shields.io/github/contributors/arunNewPhoenix/form)
 ## CLONE THE REPOSITORY
 ``````````````````````````````````````````````````````````````
 cd to the directory 
@@ -30,7 +31,7 @@ https://nimble-malasada-4ffd38.netlify.app/
 
 ![redhatGif](https://user-images.githubusercontent.com/62498648/195480327-68e372d7-2d2b-470e-82f4-71177e8363d7.gif)
 
-https://img.shields.io/github/contributors/arunNewPhoenix/form
+
 
 
 
