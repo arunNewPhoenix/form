@@ -1,6 +1,7 @@
 # form
 form to register for Apprenticeship of Red hat organization as a final year undergraduate student of 2022 
 ![GitHub contributors](https://img.shields.io/github/contributors/arunNewPhoenix/form)
+![GitHub last commit](https://img.shields.io/github/last-commit/arunNewPhoenix/form)
 ## CLONE THE REPOSITORY
 ``````````````````````````````````````````````````````````````
 cd to the directory 
